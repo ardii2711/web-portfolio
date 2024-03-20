@@ -74,4 +74,16 @@ a {
 /* Burger */
 .burger {
     display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+.burger .burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
 }
