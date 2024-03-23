@@ -1,22 +1,128 @@
 :root {
-    --primary-100:#d4eaf7;
-    --primary-200:#b6ccd8;
-    --primary-300:#3b3c3d;
-    --accent-100:#71c4ef;
-    --accent-200:#00668c;
-    --text-100:#1d1c1c;
-    --text-200:#313d44;
-    --bg-100:#fffefb;
-    --bg-200:#f5f4f1;
-    --bg-300:#cccbc8;
+	--primary-100:#d4eaf7;
+	--primary-200:#b6ccd8;
+	--primary-300:#3b3c3d;
+	--accent-100:#71c4ef;
+	--accent-200:#00668c;
+	--text-100:#1d1c1c;
+	--text-200:#313d44;
+	--bg-100:#fffefb;
+	--bg-200:#f5f4f1;
+	--bg-300:#cccbc8;
 }
+
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-body {
-    font-family: "Roboto", sans-serif;
-    background-color: var(--bg-100);
+html, body {
+	font-family: "Roboto", sans-serif;
+	background-color: var(--bg-100);
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+}
+
+/* Header */
+header {
+	display: flex;
+	height: 70px;
+	background-color: var(--bg-200);
+	box-shadow: 0 2px 3px 0.2px var(--bg-300);
+}
+
+/* Navbar */
+.nav-container {
+	width: 100%;
+	display: flex;
+	margin: 0 2rem;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+.logo a {
+	color: var(--accent-200);
+	font-weight: 500;
+	font-size: 1.14rem;
+}
+.nav-list {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+}
+.nav-list li a {
+	color: var(--accent-200);
+}
+.nav-list li a:hover {
+	color: var(--text-200);
+}
+.logo a:hover {
+	color: var(--text-200);
+}
+
+/* Humburger */
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
+.line {
+	width: 20px;
+	height: 2px;
+	background-color: var(--text-100);
+	background-color: var(--accent-200);
+	transition: transform 0.3s, opacity 0.3s;
+}
+.line2 {
+	margin: 4px 0;
+}
+.hamburger:hover .line {
+	background-color: var(--text-200);
+}
+
+/* Mode Mobile */
+@media screen and (max-width: 768px) {
+	.nav-list {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		right: 0;
+		background-color: var(--bg-200);
+		box-shadow: 0 2px 3px 0.2px var(--bg-300);
+		padding: 1rem;
+		z-index: 1;
+	}
+	.nav-list li {
+		margin-bottom: 1rem;
+	}
+	.hamburger {
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+	}
+	.nav-list.active {
+		display: flex;
+		align-items: center;
+		gap: 0.7rem;
+	}
+	.line1.rotate-right {
+		position: fixed;
+		right: 2rem;
+		transform: rotate(45deg);
+	}
+	.line3.rotate-left {
+		position: fixed;
+		right: 2rem;
+		transform: rotate(-45deg);
+	}
+	.line2.hidden {
+		display: none;
+	}
 }
