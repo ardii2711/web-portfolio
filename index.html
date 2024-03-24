@@ -1,35 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title>Portfolio</title>
-</head>
-<body>
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
     <!-- Header -->
-    <div class="nav-container">
-      <div class="logo">
-        <a href="#">Ardi Ileven</a>
+    <header>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="#">Ardi Ileven</a>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
       </div>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skill">Skill</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="hamburger">
-        <div class="line line1"></div>
-        <div class="line line2"></div>
-        <div class="line line3"></div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Main -->
+    <main id="main">
+      <div class="content">
+        <article>
+          <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>
+              Saya merupakan lulusan S1 Sistem Informasi Universitas Hasanuddin
+              yang memiliki keahlian pemrograman yang baik, memahami beberapa
+              jenis pemrograman serta mampu membuat aplikasi mobile maupun
+              website. Saya juga aktif dan berperan penting dalam organisasi
+              kemahasiswaan selama kuliah sehingga saya memiliki kemampuan
+              komunikasi dan manajemen yang baik.
+            </p>
+          </section>
+          <section id="skills" class="card">
+            <h2>Skills</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              consequuntur officia doloribus dignissimos repellat eum sit
+              numquam. In dolorum deleniti vel quam est alias? Eius officia
+              molestias eum obcaecati, eos, fuga exercitationem ullam enim totam
+              nobis provident qui labore quaerat?
+            </p>
+          </section>
+          <section id="contact" class="card">
+            <h2>Contact</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              consequuntur officia doloribus dignissimos repellat eum sit
+              numquam. In dolorum deleniti vel quam est alias? Eius officia
+              molestias eum obcaecati, eos, fuga exercitationem ullam enim totam
+              nobis provident qui labore quaerat?
+            </p>
+          </section>
+        </article>
+        <aside>
+          <div class="main-aside">
+            <img src="assets/images/profile1.png" alt="Your Name" />
+            <h2>Ardi S</h2>
+            <p>Web & Mobile Developer</p>
+            <table>
+              <tr>
+                <th>Email</th>
+                <td>: ardisa2711@gmail.com</td>
+              </tr>
+              <tr>
+                <th>Phone</th>
+                <td>: +6285340619045</td>
+              </tr>
+              <tr>
+                <th>Location</th>
+                <td>: Makassar, Indonesia</td>
+              </tr>
+            </table>
+          </div>
+        </aside>
       </div>
-    </div>
-  </header>
-  <!-- End of Header -->
-  <script src="assets/js/script.js"></script>
-</body>
+    </main>
+    <!-- End of Main -->
+
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
