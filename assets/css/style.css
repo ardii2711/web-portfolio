@@ -227,23 +227,18 @@ main {
 }
 
 /* Education */
-.education-content {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-.education-item {
+.edu-content {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
 }
-.education-item .title h3 {
-	font-weight: 500;
-}
-.title {
+.edu-item {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.edu-title {
+	font-weight: 500;
 }
 
 /* Experience */
