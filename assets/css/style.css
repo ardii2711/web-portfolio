@@ -102,7 +102,6 @@ main {
 	justify-content: center;
 	margin: 1rem;
 	gap: 1rem;
-	border: 2px solid red;
 }
 
 /* Sidebar */
@@ -210,7 +209,7 @@ main {
 .content-item {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 20px;
 	background-color: var(--bg-200);
 	padding: 10px;
 	border-radius: 10px;
@@ -225,7 +224,6 @@ main {
 .content-about p {
 	line-height: 1.5;
 	text-align: justify;
-	padding-left: 20px;
 }
 
 /* Education */
@@ -233,7 +231,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	padding-left: 20px;
 }
 .education-item {
 	display: flex;
@@ -243,10 +240,48 @@ main {
 .education-item .title h3 {
 	font-weight: 500;
 }
-.education-item .title {
+.title {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
+
+/* Experience */
+.experience-content {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.experience-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.experience-title {
+	font-weight: 500;
+}
+
+/* Skill */
+.skill-content {
+	display: flex;
+	gap: 20px;
+	justify-content: space-evenly;
+}
+.skill-item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	justify-content: center;
+	align-items: center;
+}
+.skill-item img {
+	width: 30px;
+	height: 30px;
+}
+.skill-item p {
+	font-size: 12px;
+}
+
 
 
 /* Footer */
